@@ -39,5 +39,3 @@ while bools.playing:
 
     pg.display.flip()
     pg.time.delay(num.fps)
-            
-    

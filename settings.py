@@ -5,7 +5,6 @@ from plugins.map.game_mechanics import GameMechanics
 import assets.values.integers as num
 import assets.values.booleans as bools
 
-
 class Settings():
     def __init__(self,pg):
         self.screen_size = num.screen_dimen

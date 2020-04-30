@@ -19,4 +19,3 @@ class ImageParser():
 
         self.mario_forward = [pg.image.load(mario_anim + 'forward_step_1.png'), pg.image.load(mario_anim + 'forward_step_2.png'), pg.image.load(mario_anim + 'forward_step_3.png'), pg.image.load(mario_anim + 'forward_step_4.png'), pg.image.load(mario_anim + 'forward_step_5.png')]
         self.mario_backward = [pg.image.load(mario_anim + 'backward_step_1.png'), pg.image.load(mario_anim + 'backward_step_2.png'), pg.image.load(mario_anim + 'backward_step_3.png'), pg.image.load(mario_anim + 'backward_step_4.png'), pg.image.load(mario_anim + 'backward_step_5.png')] 
-

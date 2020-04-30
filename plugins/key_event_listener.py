@@ -4,13 +4,13 @@ def key_press(pg, num, bools):
     
     #Forward movement pixels
     if (keys[pg.K_RIGHT] or keys[pg.K_d]) and num.x_move < num.move_max:
-        num.x_move += 5
+        num.x_move += num.step_size
         bools.backward = False
         bools.forward = True
 
     #Backward movement pixels
     elif (keys[pg.K_LEFT] or keys[pg.K_a]) and num.x_move > 0:
-        num.x_move -= 5
+        num.x_move -= num.step_size
         bools.backward = True
         bools.forward = False
 
@@ -40,4 +40,3 @@ def key_press(pg, num, bools):
         else:
             bools.isJump = False
             num.jumpCount = 10
-
