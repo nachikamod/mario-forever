@@ -1,4 +1,5 @@
-# Mario game development in python
+Mario game development in python
+================================
 
 ## Mario 0.1 alpha-1
 
