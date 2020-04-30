@@ -26,9 +26,10 @@ def key_press(pg, num, bools):
             bools.isJump = True
             bools.forward = False
             bools.backward = False
-            walkCount = 0
+            num.walk_count = 0
             
     else:
+        num.walk_count = 3
         #0 - 10 - 0 pixel jump
         if num.jumpCount >= -10:
             neg = 1
