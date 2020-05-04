@@ -8,5 +8,6 @@ class GenerateMap():
             screen.blit(im.parse_ground, (x, 620))
             screen.blit(im.parse_ground, (x, 660))
 
-    def place_obstacles(self, screen, pg, im, num):
-        screen.blit(im.parse_small_pipe, num.obstacle_position)
+    def place_obstacles(self, screen, pg, im, obs_pos):
+
+        screen.blit(im.parse_small_pipe, obs_pos)

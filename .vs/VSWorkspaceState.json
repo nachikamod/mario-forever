@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\assets",
+    "\\assets\\values",
     "\\plugins",
     "\\plugins\\map"
   ],
-  "SelectedNode": "\\plugins\\key_event_listener.py",
+  "SelectedNode": "\\plugins\\map\\game_mechanics.py",
   "PreviewInSolutionExplorer": false
 }

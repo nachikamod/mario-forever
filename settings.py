@@ -2,6 +2,7 @@ from plugins.image_parser import ImageParser
 from plugins.map.static_content import GenerateMap
 from plugins.map.dynamic_content import GenerateChars
 from plugins.map.game_mechanics import GameMechanics
+from plugins.map.sub_routines.sub_routine_map import SubRoutine
 import assets.values.integers as num
 import assets.values.booleans as bools
 
@@ -22,7 +23,9 @@ class Settings():
         im = ImageParser(pg)
         map_init = GenerateMap() 
         map_init.place_ground(screen, pg, im, num) 
-        map_init.place_obstacles(screen, pg, im, num)
+        sub_routine_init = SubRoutine()
+        sub_routine_init.routine_pipe(num, map_init, screen, pg, im)
+        #map_init.place_obstacles(screen, pg, im, num)
 
     #Sub plugin draw character mario
     def animate_char_mario(self, screen, pg):
@@ -34,3 +37,6 @@ class Settings():
     def plugin_game_mechanics(self):
         mechanics_init = GameMechanics()
         mechanics_init.obstacle_mechanics(bools, num)
+
+    #def map_subroutine(self):
+        

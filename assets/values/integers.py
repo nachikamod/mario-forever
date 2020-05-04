@@ -14,6 +14,9 @@ move_max = 920
 walk_count = 0
 
 jumpCount = 10
+count = 0
+
+obstacle_position_map = [(100, 547), (500,547), (800, 547)]
 
 #change dynamically 
-obstacle_position = (100, 547)
+obstacle_position = (0, 0)
