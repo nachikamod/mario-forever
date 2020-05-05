@@ -5,6 +5,7 @@ def key_press(pg, num, bools):
     #Forward movement pixels
     if (keys[pg.K_RIGHT] or keys[pg.K_d]) and num.x_move < num.move_max:
         num.x_move += num.step_size
+        print(num.x_move)
         bools.backward = False
         bools.forward = True
 

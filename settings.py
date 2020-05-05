@@ -36,7 +36,10 @@ class Settings():
     #Sub plugin game mechanics
     def plugin_game_mechanics(self):
         mechanics_init = GameMechanics()
-        mechanics_init.obstacle_mechanics(bools, num)
+        sub_routine_init = SubRoutine()
+        sub_routine_init.routine_game_mech(bools, num, mechanics_init)
+        
+        #mechanics_init.obstacle_mechanics(bools, num)
 
     #def map_subroutine(self):
         
